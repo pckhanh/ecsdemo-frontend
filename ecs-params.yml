@@ -1,6 +1,7 @@
+##Changed by KP
 version: 1
 task_definition:
-  task_execution_role: ecsTaskExecutionRole
+  task_execution_role: fargate-demo-alb-ECSTaskExecutionRole-1LHGK7VV920R8
   ecs_network_mode: awsvpc
   task_size:
     mem_limit: 0.5GB
@@ -9,9 +10,9 @@ run_params:
   network_configuration:
     awsvpc_configuration:
       subnets:
-        - "subnet-07105dbab6f04ae7f"
-        - "subnet-086d522cc6c273ac1"
-        - "subnet-0519235cdff9e7013"
+        - "subnet-0d360768d1b146748"
+        - "subnet-06fedfdff28b45cc0"
+        - "subnet-07bc235672b49354e"
       security_groups:
-        - "sg-0e5cd18b6fbb61668"
+        - "sg-0f160cd5f96c46564"
       assign_public_ip: DISABLED
